@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">CALCULADORA IMC</h1>
+        <hr>
+        <p>Cadastre uma pessoa e calcule seu Índice de Massa Corporal.</p>
+        
+        <div class="acoes-topo">
+            <button id="btnDark" class="btn-topo">Modo Escuro</button>
+            <button id="btnTeste" class="btn-topo">Testar DOM</button>
+        </div>
+    </header>
+
+    <section>
+        <h2>Cadastro</h2>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Ex.: Maria Silva">
+
+        <label for="peso">Peso (kg)</label>
+        <input type="text" id="peso" placeholder="Ex.: 70.5">
+
+        <label for="altura">Altura (m)</label>
+        <input type="text" id="altura" placeholder="Ex.: 1.75">
+
+        <div class="botoes-form">
+            <button id="btnCalcular" class="btn-primario">Calcular IMC</button>
+            <button id="btnLimpar" class="btn-secundario">Limpar Formulário</button>
+        </div>
+
+        <div id="resultado">
+            <span>Resultado:</span>
+        </div>
+
+        <section class="estatisticas">
+            <h2>Estatísticas da Turma</h2>
+            <div class="cards-stats">
+                <div class="card">
+                    <h4>Média dos IMCs</h4>
+                    <span id="mediaIMC">-</span>
+                </div>
+                <div class="card">
+                    <h4>Maior IMC</h4>
+                    <span id="maiorIMC">-</span>
+                </div>
+                <div class="card">
+                    <h4>Menor IMC</h4>
+                    <span id="menorIMC">-</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="titulo-lista">
+                <h2>Pessoas cadastradas</h2>
+                <span id="numeroPessoas">0</span>
+            </div>
+
+            <input type="text" id="inputBusca" placeholder="Pesquisar por nome...">
+
+            <div id="listaPessoas">
+                <p>Nenhuma pessoa cadastrada ainda.</p>
+            </div>
+        </section>  
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
